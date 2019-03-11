@@ -1,0 +1,40 @@
+<!-- markdownlint-disable MD002 MD041 -->
+
+<span data-ttu-id="13621-101">En este ejercicio, creará una nueva aplicación de Azure Active Directory que se usará para proporcionar los permisos delegados para el conector personalizado.</span><span class="sxs-lookup"><span data-stu-id="13621-101">In this exercise, you will create a new Azure Active Directory Application which will be used to provide the delegated permissions for the custom connector.</span></span>
+
+<span data-ttu-id="13621-102">Abra un explorador y vaya al [centro de administración de Azure Active Directory](https://aad.portal.azure.com).</span><span class="sxs-lookup"><span data-stu-id="13621-102">Open a browser and navigate to [Azure Active Directory admin center](https://aad.portal.azure.com).</span></span> <span data-ttu-id="13621-103">Elija el vínculo de **Azure Active Directory** en el menú de navegación de la izquierda y, después, elija la entrada **registros de aplicaciones** en la sección **administrar** de la hoja **Azure Active Directory** .</span><span class="sxs-lookup"><span data-stu-id="13621-103">Choose the **Azure Active Directory** link in the left navigation menu, then choose the **App registrations** entry in the **Manage** section of the **Azure Active Directory** blade.</span></span>
+
+![Captura de pantalla de la hoja de Azure Active Directory en el centro de administración de Azure Active Directory](./images/app-reg1.png)
+
+<span data-ttu-id="13621-105">Elija el elemento de menú **registro de aplicaciones nuevo** en la parte superior de la hoja **registros** de aplicaciones.</span><span class="sxs-lookup"><span data-stu-id="13621-105">Choose the **New application registration** menu item at the top of the **App Registrations** blade.</span></span>
+
+![Captura de pantalla de la hoja registros de aplicaciones en el centro de administración de Azure Active Directory](./images/app-reg2.png)
+
+<span data-ttu-id="13621-107">Escriba `MS Graph Batch App` en el campo **nombre** y `https://localhost.com/$batch` , en el campo **dirección URL de inicio de sesión** , elija **crear**.</span><span class="sxs-lookup"><span data-stu-id="13621-107">Enter `MS Graph Batch App` in the **Name** field, and `https://localhost.com/$batch` in the **Sign-on URL** field and choose **Create**.</span></span>
+
+![Captura de pantalla del formulario de creación para un nuevo registro de aplicaciones en el centro de administración de Azure Active Directory](./images/app-reg3.png)
+
+<span data-ttu-id="13621-109">En la página **aplicación para lotes de MS Graph** , copie el **identificador de aplicación** de la aplicación.</span><span class="sxs-lookup"><span data-stu-id="13621-109">On the **MS Graph Batch App** page, copy the **Application ID** of the application.</span></span> <span data-ttu-id="13621-110">Lo necesitará en el siguiente ejercicio.</span><span class="sxs-lookup"><span data-stu-id="13621-110">You'll need this in the next exercise.</span></span>
+
+![Captura de pantalla de la página de aplicación registrada](./images/app-reg4.png)
+
+<span data-ttu-id="13621-112">Elija el engranaje **configuración** en el nombre de la aplicación y luego elija el elemento de menú **permisos necesarios** en la hoja configuración.</span><span class="sxs-lookup"><span data-stu-id="13621-112">Choose the **Settings** gear under the application name, then choose the **Required Permissions** menu item in the Settings blade.</span></span> <span data-ttu-id="13621-113">Elija **Agregar** en la parte superior de la hoja de **permisos necesarios** .</span><span class="sxs-lookup"><span data-stu-id="13621-113">Choose **Add** at the top of the **Required Permissions** blade.</span></span>
+
+![Captura de pantalla de la hoja de permisos necesarios](./images/app-perms1.png)
+
+<span data-ttu-id="13621-115">Seleccione la opción **seleccionar una API** en la hoja **Agregar API de acceso** y, a continuación, seleccione el elemento **Microsoft Graph** y elija **seleccionar** en la parte inferior de la hoja.</span><span class="sxs-lookup"><span data-stu-id="13621-115">Choose the **Select an API** option in the **Add API access** blade, then select the **Microsoft Graph** item and choose **Select** at the bottom of the blade.</span></span>
+
+![Captura de pantalla de la hoja seleccionar una API](./images/app-perms2.png)
+
+<span data-ttu-id="13621-117">En la hoja **Habilitar acceso** , desplácese hacia abajo hasta la sección **permisos** delegados.</span><span class="sxs-lookup"><span data-stu-id="13621-117">On the **Enable Access** blade, scroll down to the **Delegated Permissions** section.</span></span> <span data-ttu-id="13621-118">Seleccione el permiso delegado **leer y escribir en todos los grupos** y, a continuación, elija **seleccionar** en la parte inferior de la hoja.</span><span class="sxs-lookup"><span data-stu-id="13621-118">Select the **Read and write all groups** delegated permission, then choose **Select** at the bottom of the blade.</span></span> <span data-ttu-id="13621-119">Elija **hecho** en la parte inferior de la hoja **Agregar API de acceso** .</span><span class="sxs-lookup"><span data-stu-id="13621-119">Choose **Done** at the bottom of the **Add API access** blade.</span></span>
+
+ ![Captura de pantalla de la hoja de acceso para habilitar](./images/app-perms3.png)
+
+<span data-ttu-id="13621-121">Elija el elemento de menú **claves** en la hoja **configuración** .</span><span class="sxs-lookup"><span data-stu-id="13621-121">Choose the **Keys** menu item on the **Settings** blade.</span></span> <span data-ttu-id="13621-122">Escriba `forever` en la **Descripción** de la clave y seleccione **nunca expira** en el menú desplegable **duración** .</span><span class="sxs-lookup"><span data-stu-id="13621-122">Enter `forever` in the **Key description** and select **Never expires** from the **Duration** drop down menu.</span></span> <span data-ttu-id="13621-123">Elija **Guardar** en la parte superior de la hoja **claves** .</span><span class="sxs-lookup"><span data-stu-id="13621-123">Choose **Save** at the top of the **Keys** blade.</span></span> <span data-ttu-id="13621-124">Copie el valor clave de la nueva clave.</span><span class="sxs-lookup"><span data-stu-id="13621-124">Copy the key value for the new key.</span></span> <span data-ttu-id="13621-125">Lo necesitará en el siguiente ejercicio.</span><span class="sxs-lookup"><span data-stu-id="13621-125">You'll need this in the next exercise.</span></span>
+
+![Captura de pantalla de la hoja claves](./images/app-key1.png)
+
+> [!IMPORTANT]
+> <span data-ttu-id="13621-127">Este paso es crítico ya que no se podrá acceder a la clave una vez que cierre esta hoja.</span><span class="sxs-lookup"><span data-stu-id="13621-127">This step is critical as the key will not be accessible once you close this blade.</span></span> <span data-ttu-id="13621-128">Guarde esta clave en un editor de texto para usarla en los ejercicios venideros.</span><span class="sxs-lookup"><span data-stu-id="13621-128">Save this key to a text editor for use in upcoming exercises.</span></span>
+
+<span data-ttu-id="13621-129">Para habilitar la administración de servicios adicionales a los que se puede tener acceso a través de Microsoft Graph, incluidas las propiedades de Team, debe seleccionar ámbitos apropiados adicionales para habilitar la administración de servicios específicos.</span><span class="sxs-lookup"><span data-stu-id="13621-129">To enable management of additional services accessible via the Microsoft Graph, including Teams properties, you would need to select additional, appropriate scopes to enable managing specific services.</span></span> <span data-ttu-id="13621-130">Por ejemplo, para ampliar nuestra solución para habilitar la creación de blocs de notas de OneNote o los planes de planeación, las tareas que necesitaría agregar los ámbitos de permisos necesarios para las API relevantes.</span><span class="sxs-lookup"><span data-stu-id="13621-130">For example, to extend our solution to enable creating OneNote Notebooks or Planner plans, buckets and tasks you would need to add the required permission scopes for the relevant APIs.</span></span>
