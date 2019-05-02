@@ -18,7 +18,7 @@ Escriba `MS Graph Batch Connector` en el cuadro de texto **nombre del conector p
 
  ![Captura de pantalla del cuadro de diálogo crear conector personalizado](./images/flow-conn3.png)
 
-En la página Configuración del conector, elija el vínculo **seguridad** en el menú de navegación. ReLlene los campos como se indica a continuación.
+En la página Configuración del conector, elija el vínculo **seguridad** en el menú de navegación. Rellene los campos como se indica a continuación.
 
 - **Elija qué autenticación implementa la API**:`OAuth 2.0`
 - **Proveedor de identidad**:`Azure Active Directory`

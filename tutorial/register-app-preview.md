@@ -2,11 +2,11 @@
 
 En este ejercicio, creará una nueva aplicación de Azure Active Directory que se usará para proporcionar los permisos delegados para el conector personalizado.
 
-Abra un explorador y vaya al [centro de administración de Azure Active Directory](https://aad.portal.azure.com). Elija el vínculo de **Azure Active Directory** en el menú de navegación de la izquierda y, después, elija la entrada **registros de aplicaciones (vista previa)** en la sección **administrar** de la hoja **Azure Active Directory** .
+Abra un explorador y vaya al [centro de administración de Azure Active Directory](https://aad.portal.azure.com). Elija el vínculo de **Azure Active Directory** en el menú de navegación de la izquierda y, después, elija la entrada **registros de aplicaciones** en la sección **administrar** de la hoja **Azure Active Directory** .
 
 ![Captura de pantalla de la hoja de Azure Active Directory en el centro de administración de Azure Active Directory](./images/app-reg-preview1.png)
 
-Elija el elemento de menú **registro nuevo** en la parte superior de la hoja **registros de aplicaciones (vista previa)** .
+Elija el elemento de menú **registro nuevo** en la parte superior de la hoja **registros de aplicaciones** .
 
 ![Captura de pantalla de la hoja registros de aplicaciones en el centro de administración de Azure Active Directory](./images/app-reg-preview2.png)
 
@@ -26,7 +26,7 @@ En la hoja **solicitar permisos de API** , elija **Microsoft Graph**y, a continu
 
  ![Captura de pantalla de la hoja de permisos de la API de solicitud](./images/app-perms-preview2.png)
 
-Elija la entrada **certificados y secretos** en la sección **administrar** de la hoja de la **aplicación batch de MS Graph** y, a continuación, elija **nuevo secreto de cliente**. Escriba `forever` en la **Descripción** y seleccione **nunca** en **Expires**. Elija **Agregar**.
+Elija la entrada **certificados y secretos** en la sección **administrar** de la hoja de la **aplicación batch de MS Graph** y, a continuación, elija **nuevo secreto de cliente**. Escriba `forever` en la **Descripción** y seleccione **nunca** en **Expires**. Seleccione **Agregar**.
 
 ![Captura de pantalla del módulo de certificados y secretos](./images/app-key-preview1.png)
 
