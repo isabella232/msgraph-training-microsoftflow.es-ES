@@ -67,13 +67,9 @@ body('Batch_PUT-team').responses[0].body.id
 
 ![Captura de pantalla de la expresión en el panel de contenido dinámico](./images/flow-channel1.png)
 
-Elija **Guardar**y, a continuación, elija **prueba** para ejecutar el flujo. Seleccione el botón de opción **voy a realizar la** acción desencadenadora y, a continuación, elija **Guardar prueba de &**. Escriba un nombre de grupo único en el campo **nombre** sin espacios y elija **Ejecutar flujo** para ejecutar el flujo.
+Elija **Guardar**y, a continuación, elija **prueba** para ejecutar el flujo. Seleccione el botón de opción **voy a realizar la acción desencadenadora** y, a continuación, elija **Guardar & prueba**. Escriba un nombre de grupo único en el campo **nombre** sin espacios y elija **Ejecutar flujo** para ejecutar el flujo.
 
-![Captura de pantalla del cuadro de diálogo flujo de ejecución](./images/flow-channel3.png)
-
-Una vez que se inicie el flujo, seleccione el vínculo **ver actividad de ejecución de flujo** y, a continuación, elija el flujo de ejecución para ver el registro de actividades.
-
-Una vez finalizado el flujo, el resultado final de `Batch POST-channels` la acción tiene una respuesta de Estado HTTP de 201 para cada canal creado.
+Una vez que se inicie el flujo, seleccione el botón **listo** para ver el registro de actividades. Una vez finalizado el flujo, el resultado final de `Batch POST-channels` la acción tiene una respuesta de Estado HTTP de 201 para cada canal creado.
 
 ![Captura de pantalla del registro de la actividad de flujo correcta](./images/flow-channel2.png)
 

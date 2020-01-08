@@ -26,7 +26,7 @@ Seleccione la opción **seleccionar una API** en la hoja **Agregar API de acceso
 
 ![Captura de pantalla de la hoja seleccionar una API](./images/app-perms2.png)
 
-En la hoja **Habilitar acceso** , desplácese hacia abajo hasta la sección **permisos** delegados. Seleccione el permiso delegado **leer y escribir en todos los grupos** y, a continuación, elija **seleccionar** en la parte inferior de la hoja. Elija **hecho** en la parte inferior de la hoja **Agregar API de acceso** .
+En la hoja **Habilitar acceso** , desplácese hacia abajo hasta la sección **permisos delegados** . Seleccione el permiso delegado **leer y escribir en todos los grupos** y, a continuación, elija **seleccionar** en la parte inferior de la hoja. Elija **hecho** en la parte inferior de la hoja **Agregar API de acceso** .
 
  ![Captura de pantalla de la hoja de acceso para habilitar](./images/app-perms3.png)
 

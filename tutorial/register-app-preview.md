@@ -10,7 +10,7 @@ Elija el elemento de menú **registro nuevo** en la parte superior de la hoja **
 
 ![Captura de pantalla de la hoja registros de aplicaciones en el centro de administración de Azure Active Directory](./images/app-reg-preview2.png)
 
-Escriba `MS Graph Batch App` en el campo **nombre** . En la sección **tipos de cuenta admitidos** , seleccione **cuentas en cualquier directorio de la organización**. Deje en blanco la sección **URI** de redireccionamiento y elija **registrar**.
+Escriba `MS Graph Batch App` en el campo **nombre** . En la sección **tipos de cuenta admitidos** , seleccione **cuentas en cualquier directorio de la organización**. Deje en blanco la sección **URI de redireccionamiento** y elija **registrar**.
 
 ![Captura de pantalla de la hoja de registro de aplicaciones en el centro de administración de Azure Active Directory](./images/app-reg-preview3.png)
 
@@ -22,7 +22,7 @@ Elija la entrada **permisos de API** en la sección **administrar** de la hoja *
 
 ![Captura de pantalla de la hoja de permisos de la API](./images/app-perms-preview1.png)
 
-En la hoja **solicitar permisos de API** , elija **Microsoft Graph**y, a continuación, elija **permisos**delegados. Busque y `group`, a continuación, seleccione el permiso delegados **leer y escribir en todos los grupos** . Elija **Agregar permisos** en la parte inferior de la hoja.
+En la hoja **solicitar permisos de API** , elija **Microsoft Graph**y, a continuación, elija **permisos delegados**. Busque y `group`, a continuación, seleccione el permiso delegados **leer y escribir en todos los grupos** . Elija **Agregar permisos** en la parte inferior de la hoja.
 
  ![Captura de pantalla de la hoja de permisos de la API de solicitud](./images/app-perms-preview2.png)
 

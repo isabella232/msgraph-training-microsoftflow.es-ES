@@ -6,9 +6,9 @@ En el final el flujo tendrá un aspecto similar al de la siguiente imagen:
 
 ![Captura de pantalla del flujo completado](./images/flow-team1.png)
 
-Abra [Microsoft Flow](https://flow.microsoft.com) en el explorador e inicie sesión con su cuenta de administrador de inquilinos de Office 365. Elija **Mis flujos** en el panel de navegación izquierdo. Elija **nuevo**y, a continuación, **crear desde en blanco**. Elija **crear desde en blanco**. Escriba `Manual` en el cuadro de búsqueda y agregue el desencadenador de **flujo manualmente** .
+Abra [Microsoft Flow](https://flow.microsoft.com) en el explorador e inicie sesión con su cuenta de administrador de inquilinos de Office 365. Elija **Mis flujos** en el panel de navegación izquierdo. Elija **nuevo**y luego **instantánea--en blanco**. Escriba `Create Team` para **nombre de flujo**y, a continuación, seleccione **desencadenar manualmente un flujo** en **elegir cómo activar este flujo**. Seleccione **Crear**.
 
-Elija **Agregar entrada**, seleccione **texto** y escriba `Name` como título.
+Seleccione **desencadenar manualmente un** elemento de flujo y, a continuación, elija **Agregar una entrada**, `Name` seleccione **texto** y escriba como título.
 
 ![Captura de pantalla del desencadenador de flujo manualmente](./images/flow-team6.png)
 
@@ -87,20 +87,15 @@ Esta fórmula especifica que queremos usar el identificador de grupo del resulta
 
 ![Captura de pantalla del cuerpo de la acción actualizado](./images/flow-team3.png)
 
-Elija **Guardar**, luego flujo y elija **prueba** para ejecutar el flujo.
+Elija **Guardar**y, a continuación, elija **prueba** para ejecutar el flujo.
 
 > [!TIP]
 > Si recibe un error como el `The template validation failed: 'The action(s) 'Batch_POST-groups' referenced by 'inputs' in action 'Batch_2' are not defined in the template'`siguiente, la expresión es incorrecta y es probable que haga referencia a una acción de flujo que no puede encontrar. Asegúrese de que el nombre de la acción al que hace referencia coincide exactamente.
 
-Elija el botón de opción **voy a realizar la** acción desencadenadora y elija **Guardar prueba de &**. Elija **continuar** en el cuadro de diálogo. Proporcione un nombre sin espacios y elija **Ejecutar flujo** para crear un equipo.
+Elija el botón de opción **voy a realizar la acción desencadenadora** y elija **Guardar & prueba**. Elija **continuar** en el cuadro de diálogo. Proporcione un nombre sin espacios y elija **Ejecutar flujo** para crear un equipo.
 
 ![Captura de pantalla del cuadro de diálogo flujo de ejecución](./images/flow-team4.png)
 
-Por último, seleccione el vínculo **ver actividad de ejecución de flujo** y, a continuación, seleccione el flujo de ejecución para ver el registro de actividades.
-
-> [!NOTE]
-> Es posible que deba hacer clic en la instancia del flujo de ejecución en la lista de historial de ejecución para ver la ejecución de flujo.
-
-Una vez que se haya completado el flujo, el grupo y el equipo de 365 de Office se han configurado. Seleccione los elementos de acción por lotes para ver los resultados de las llamadas de lotes JSON. La `outputs` de la `Batch PUT-team` acción debe tener un código de estado de 201 para una asociación de equipo correcta similar a la imagen siguiente.
+Por último, elija el **listo** para ver el registro de actividades. Una vez que se haya completado el flujo, el grupo y el equipo de 365 de Office se han configurado. Seleccione los elementos de acción por lotes para ver los resultados de las llamadas de lotes JSON. La `outputs` de la `Batch PUT-team` acción debe tener un código de estado de 201 para una asociación de equipo correcta similar a la imagen siguiente.
 
 ![Captura de pantalla del registro de la actividad de flujo correcta](./images/flow-team5.png)
